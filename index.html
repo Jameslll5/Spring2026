@@ -23,10 +23,10 @@
 <h2 style="text-align: center; color: blue;">My photography journey </h2> <style></style>
 <div><style></style></div margin: 40px;>
  <p>I started my photography journey in high school. I joined the yearbook program at my high school and started photographing the sports games at my high school, and started doing photoshoots on the side.
-<img class="center" src="images/camera photoshop.png" alt="image of camera" width="50px">
+<img class="right" src="images/camera photoshop.png" alt="image of camera" width="50px">
 <h3 style="text-align: center; color: rgb(2, 30, 58);">My graphic Design experience
 </h3> high school from freshman year to junior year I have 3 years of experience in doing graphic design.
-</p><img class="center" src="images/graphic design photoshop.png" alt="image saying graphic design">
+</p><img class="left" src="images/graphic design photoshop.png" alt="image saying graphic design">
     </body></html> <div></div>
 </html> <div style="text-align: center; font-weight: bold;">
 
@@ -44,8 +44,7 @@
 <body>
 
 
-    <!-- replace your current copyright div with this -->
-    <footer></footer>
+    <!-- removed empty footer -->
 </body>
 
 
@@ -62,8 +61,7 @@
 <body>
 
 
-    <!-- replace your current copyright div with this -->
-    <footer></footer>
+    <!-- removed empty footer -->
 </body>
 
 <head>
@@ -100,9 +98,13 @@
 
             /* keep images centered as blocks */
             img { display: block; margin: 0 auto; }
+            /* move only the graphic design image to the left */
+            img.left { float: left; margin-right: 16px; }
+            /* move only the camera image to the right */
+            img.right { float: right; margin-left: 16px; }
         </style>
     </head>
-    <footer>
+    <!-- removed stray footer -->
 <head>
     
     <style>
@@ -114,11 +116,20 @@
             font-style: italic;
             display: inline-block;
         }
-        .site-footer { text-align: center; margin-top: 20px; }
+        /* keep the copyright centered and fixed to the bottom */
+        .site-footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 8px 0;
+            z-index: 1000;
+        }
     </style>
 </head>
 
 <div class="site-footer">
     <footer>Copyright James Lopez @2026</footer>
-</div> 
+</div>
 
