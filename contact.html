@@ -1,58 +1,41 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+<html></html>
+  <head>
+    <title>Book your sports game & Photoshoot now</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Book your sports game & Photoshoot now</h1>
+      <audio controls style="position: fixed; bottom: 20px; left: 20px; z-index: 9998;">
+        <source src="audio/kakaist-camera-shutter-314056.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <form class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-        <div class="hero">
-            <h1>Book your sports game or photoshoot now</h1>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-            <form class="contact-form" action="#" method="post">
-                <label for="first-name">First name</label>
-                <input type="text" id="first-name" name="first_name" required>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
 
-                <label for="last-name">Last name</label>
-                <input type="text" id="last-name" name="last_name" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="phone">Phone number</label>
-                <input type="tel" id="phone" name="phone" required>
-
-                <label for="message">Write your details</label>
-                <textarea id="message" name="message" rows="6" placeholder="Describe the session, date, location, or questions..."></textarea>
-
-                <button type="submit">Send</button>
-            </form>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 4px; margin: 12px 0;">
+          <label><input type="checkbox" name="services" value="sports-game"> Sports game</label>
+          <button type="submit">Send Message</button>
+          <label style="margin-left: 12px;"><input type="checkbox" name="services" value="photoshoot"> Photoshoot</label>
         </div>
-
-        <svg class="camera-svg" viewBox="0 0 64 64" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-            <rect x="6" y="18" width="52" height="34" rx="4" fill="white" />
-            <rect x="10" y="12" width="14" height="8" rx="2" fill="white" />
-            <circle cx="32" cy="35" r="10" fill="none" stroke="#000" stroke-width="3" />
-            <circle cx="32" cy="35" r="6" fill="#000" />
-            <rect x="46" y="22" width="6" height="6" rx="1" fill="#000" opacity="0.08" />
-        </svg>
-
-        <audio class="camera-audio" controls>
-            <source src="audio/kakaist-camera-shutter-314056.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-
-        <script src="" async defer></script>
-    </body>
+      </form>
+    </div>
+    <svg class="camera-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="position: fixed; bottom: 20px; right: 20px; width: 100px; height: auto; z-index: 9999; cursor: pointer; filter: drop-shadow(0 6px 16px rgba(0,0,0,0.6));">
+      <!-- Camera body -->
+      <rect x="15" y="25" width="70" height="50" rx="5" fill="#4ea1ff" stroke="#ffffff" stroke-width="2"/>
+      <!-- Camera lens -->
+      <circle cx="50" cy="50" r="18" fill="#ffffff" stroke="#4ea1ff" stroke-width="2"/>
+      <!-- Inner lens -->
+      <circle cx="50" cy="50" r="12" fill="#000000" opacity="0.3"/>
+      <!-- Flash -->
+      <rect x="25" y="15" width="12" height="8" rx="1" fill="#ffffff" stroke="#4ea1ff" stroke-width="1"/>
+    </svg>
+  </body>
 </html>

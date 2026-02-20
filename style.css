@@ -84,7 +84,7 @@ input, textarea, select {
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
-	width: 100px;
+	width: 60px;
 	height: auto;
 	z-index: 9999;
 	cursor: pointer;
@@ -92,13 +92,3 @@ input, textarea, select {
 	transition: transform 150ms ease, opacity 150ms ease;
 }
 .camera-svg:hover { transform: translateY(-4px) scale(1.04); opacity: 0.98; }
-/* Audio player positioned next to camera */
-.camera-audio {
-	position: fixed;
-	bottom: 28px;
-	right: 140px;
-	width: 100px;
-	height: 32px;
-	z-index: 9999;
-	filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5));
-}
