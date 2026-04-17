@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How I got better at Photography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: darkorange;
+            color: #fff;
+            font-family: 'Oswald', sans-serif;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        h1 {
+            text-align: center;
+            font-size: clamp(2rem, 8vw, 5rem);
+            color: red;
+            background-color: white;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        p {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        @media (max-width: 480px) {
+            body { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <h1>How I got better at Photography</h1>
+    <p style="font-size: clamp(1.2rem, 3vw, 1.8rem); background-color: black; padding: 10px; border-radius: 10px;">I got better at photography by practicing consistently and learning from my mistakes after every shoot. I also improved by studying techniques like lighting, composition, and camera settings to understand how to get the best results. Over time, working with different people and environments helped me gain more confidence and develop my own style.</p>
+</body>
+</html>

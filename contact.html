@@ -6,11 +6,76 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      .container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .contact-form {
+        width: 100%;
+        max-width: 700px;
+      }
+      audio {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 9998;
+      }
+      .camera-svg {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 100px;
+        height: auto;
+        z-index: 9999;
+        cursor: pointer;
+        filter: drop-shadow(0 6px 16px rgba(0,0,0,0.6));
+      }
+      @media (max-width: 768px) {
+        body {
+          padding: 10px;
+        }
+        .contact-form {
+          width: 100%;
+        }
+        audio {
+          width: 80%;
+          bottom: auto;
+          left: 10%;
+          right: 10%;
+          margin-bottom: 20px;
+          position: static;
+          z-index: auto;
+        }
+        .camera-svg {
+          width: 80px;
+          bottom: auto;
+          right: auto;
+          position: static;
+          margin-top: 20px;
+        }
+        div[style*="display: flex"] {
+          flex-direction: column !important;
+          gap: 10px !important;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="container">
       <h1>Book your sports game & Photoshoot now</h1>
-      <audio controls style="position: fixed; bottom: 20px; left: 20px; z-index: 9998;">
+      <audio controls>
         <source src="audio/kakaist-camera-shutter-314056.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
@@ -30,16 +95,16 @@
           <label style="margin-left: 12px;"><input type="checkbox" name="services" value="photoshoot"> Photoshoot</label>
         </div>
       </form>
+      <svg class="camera-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        
+        <rect x="15" y="25" width="70" height="50" rx="5" fill="#4ea1ff" stroke="#ffffff" stroke-width="2"/>
+        
+        <circle cx="50" cy="50" r="18" fill="#ffffff" stroke="#4ea1ff" stroke-width="2"/>
+        
+        <circle cx="50" cy="50" r="12" fill="#000000" opacity="0.3"/>
+        
+        <rect x="25" y="15" width="12" height="8" rx="1" fill="#ffffff" stroke="#4ea1ff" stroke-width="1"/>
+      </svg>
     </div>
-    <svg class="camera-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="position: fixed; bottom: 20px; right: 20px; width: 100px; height: auto; z-index: 9999; cursor: pointer; filter: drop-shadow(0 6px 16px rgba(0,0,0,0.6));">
-      
-      <rect x="15" y="25" width="70" height="50" rx="5" fill="#4ea1ff" stroke="#ffffff" stroke-width="2"/>
-      
-      <circle cx="50" cy="50" r="18" fill="#ffffff" stroke="#4ea1ff" stroke-width="2"/>
-      
-      <circle cx="50" cy="50" r="12" fill="#000000" opacity="0.3"/>
-      
-      <rect x="25" y="15" width="12" height="8" rx="1" fill="#ffffff" stroke="#4ea1ff" stroke-width="1"/>
-    </svg>
   </body>
 </html>

@@ -17,8 +17,6 @@
         <style>
             * { font-family: 'Oswald', sans-serif; }
             img { display: block; margin: 0 auto; }
-            img.left { float: left; margin-right: 16px; }
-            img.right { float: right; margin-left: 16px; }
             footer {
                 background: #007BFF;
                 color: #fff;
@@ -30,32 +28,49 @@
             .copyright-word { color: yellow; transition: color 0.15s ease; }
             .copyright-word:hover { color: #ffd84d; cursor: pointer; }
             .site-footer {
-                position: fixed;
-                left: 0;
-                bottom: 0;
-                width: 100%;
+                margin-top: 20px;
                 text-align: center;
-                padding: 8px 0;
-                z-index: 1000;
+            }
+            @media (max-width: 768px) {
+                .content { gap: 20px; }
+                .photography div, .design div { flex-direction: column; text-align: center; }
+                .links { flex-direction: column; gap: 10px; position: static; margin-top: 20px; align-items: center; }
+                .site-footer { position: static; margin-top: 20px; }
+                body { padding: 10px; }
             }
         </style>
     </head>
    
-    <body style="background-color: darkorange; margin: 40px;">
-        <h1 style="text-align: center; color: crimson;">My years through baseball</h1>
-        <p style="text-align: center;"><i>My baseball journey from the age of 5 years old to my junior year of high school.</i></p>
-        <img class="center" src="images/baseball photoshop.png" alt="image of baseball">
-        <h2 style="text-align: center; color: blue;">My photography journey</h2>
-        <p>I started my photography journey in high school. I joined the yearbook program at my high school and started photographing the sports games at my high school, and started doing photoshoots on the side.
-        <img class="right" src="images/camera photoshop.png" alt="image of camera" width="50px">
-        <h3 style="text-align: center; color: rgb(2, 30, 58);">My graphic Design experience</h3>
-        High school from freshman year to junior year I have 3 years of experience in doing graphic design.
-        </p>
-        <img class="left" src="images/graphic design photoshop.png" alt="image saying graphic design">
-        <p style="position: fixed; bottom: 60px; left: 20px; margin:0;"><a href="Untitled-1.html" style="font-weight:bold; color:blue;">Why I do Sports Photography</a></p>
-        <p style="position: fixed; bottom: 60px; right: 20px; margin: 0;"><a href="contact.html" style="font-size: 1.2em; font-weight: bold;">Book your sports game & Photoshoot now</a></p>
-        <div class="site-footer">
-            <footer><span class="copyright-word">Copyright</span> James Lopez @2026</footer>
+    <body style="background-color: darkorange; margin: 0; display: flex; flex-direction: column; min-height: 100vh; padding: 20px; box-sizing: border-box;">
+        <div class="content" style="flex: 1; display: flex; flex-direction: column; gap: 40px;">
+            <section class="intro" style="text-align: center;">
+                <h1 style="color: crimson; background-color: white; padding: 2px 0px; border-radius: 10px;">My years through baseball</h1>
+                <p style="text-align: left; background-color: black; color: white; border-radius: 10px;"><i>My baseball journey from the age of 5 years old to my junior year of high school.</i></p>
+                <img src="images/baseball photoshop.png" alt="image of baseball" style="max-width: 100%; height: auto;">
+            </section>
+            <section class="photography">
+                <h2 style="text-align: center; color: red; font-size: 1.8em; background-color: white; padding: 5px; border-radius: 10px;">My photography journey</h2>
+                <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+                    <p style="background-color: black; color: white; border-radius: 10px;">I started my photography journey in high school. I joined the yearbook program at my high school and started photographing the sports games at my high school, and started doing photoshoots on the side.</p>
+                    <img src="images/camera photoshop.png" alt="image of camera" style="width: 50px; flex-shrink: 0;">
+                </div>
+            </section>
+            <section class="design">
+                <h3 style="text-align: center; color: red; font-size: 2em; background-color: white; padding: 5px; border-radius: 10px;">My graphic Design experience</h3>
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+                    <p style="background-color: black; color: white; border-radius: 5px;">High school from freshman year to junior year I have 3 years of experience in doing graphic design.</p>
+                    <img src="images/graphic design photoshop.png" alt="image saying graphic design" style="max-width: 100%; height: auto;">
+                </div>
+            </section>
+            <div class="site-footer">
+                <footer><span class="copyright-word">Copyright</span> James Lopez @2026</footer>
+            </div>
+            <div class="links" style="display: flex; flex-direction: row; align-items: center; gap: 10px; margin-top: 20px; justify-content: center; background-color: white; padding: 10px; border-radius: 10px;">
+                <a href="contact.html" style="font-size: 1.2em; font-weight: bold; color: blue;">Contact</a>
+                <a href="Untitled-1.html" style="font-weight:bold; color:blue;">Why I do Sports Photography</a>
+                <a href="why i like to do portrait photography" style="font-weight:bold; color:blue;">Why I like to do Portrait Photography</a>
+                <a href="How I got better at Photography" style="font-weight:bold; color:blue;">How I got better at Photography</a>
+            </div>
         </div>
     </body>
 </html>
